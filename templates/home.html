@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Count Home</title>
+    </head>
+    <body>
+        <h1>Hi This is Homepage</h1>
+
+        <div>
+          <form action="{% url 'count' %}">
+            <textarea rows="5",cols="40", name="fulltext", style="background: salmon;"></textarea>
+            <br>
+            <input type="submit", value="Count", style="background:blue;"/>
+          </form>
+        </div>
+        <br><br><br><br>
+        <footer style="margin-bottom:0">
+          <button style="background:salmon; color:cyan;"><a href="{% url 'about' %}">About</a></button>
+        </footer>
+    </body>
+</html>

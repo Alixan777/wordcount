@@ -1,0 +1,15 @@
+<h1>There are {{ wordlist }}</h1>
+
+<h2>Your Text:</h2>
+<br>
+{{ fulltext }}
+<hr>
+
+<h2 style="color:salmon;">Here are the most used words!!!</h2>
+
+{% for key, value in worddict %}
+{{ key }}
+<span> - </span>
+{{ value }}
+<br>
+{% endfor %}
